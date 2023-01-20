@@ -60,7 +60,6 @@ table 50100 "Main Vendors"
 
     field(2; "Vendor Name"; Text[150])
     {
-      DataClassification = ToBeClassified;
       FieldClass = FlowField;
       CalcFormula = lookup (Vendor.Name where ("No." = field ("Vendor No.")));
     }
